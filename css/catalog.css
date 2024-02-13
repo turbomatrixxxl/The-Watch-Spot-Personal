@@ -1,0 +1,12 @@
+/* Media Querries */
+@media screen and (width >=768px) {
+    .button {
+        padding: 18px 35px;
+        justify-content: flex-end;
+
+        width: 122px;
+        height: 50px;
+    }
+}
+
+@media screen and (width >=1158px) {}

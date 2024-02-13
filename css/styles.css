@@ -68,7 +68,7 @@ img {
 }
 
 /* Media Querries */
-@media screen and (width >= 768px) {
+@media screen and (width >=768px) {
   .button {
     padding: 18px 35px;
     justify-content: flex-end;
@@ -78,5 +78,4 @@ img {
   }
 }
 
-@media screen and (width >= 1158px) {
-}
+@media screen and (width >=1158px) {}
