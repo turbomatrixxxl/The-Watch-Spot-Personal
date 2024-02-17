@@ -1,84 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Watch Spot</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Watch Spot</title>
+    <!-- Modern normalize pentru vedere pe orice browser -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
 
-  <!-- Modern normalize pentru vedere pe orice browser -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- copiat de pe google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap"
+      rel="stylesheet" />
 
-  <!-- copiat de pe google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/about-us.css" />
+    <link rel="stylesheet" href="./css/catalog.css" />
+    <link rel="stylesheet" href="./css/my-watches.css" />
+    <link rel="stylesheet" href="./css/sale.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/hero.css" />
-  <link rel="stylesheet" href="./css/about-us.css" />
-  <link rel="stylesheet" href="./css/catalog.css" />
-  <link rel="stylesheet" href="./css/my-watches.css" />
-  <link rel="stylesheet" href="./css/sale.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
-
-
-</head>
-
-<!-- Body -->
-
-<body>
-  <div class="body-container">
-    <!-- Header and Hero section -->
-    <div class="first-page-container">
-      <header class="header">
-        <div class="mobile-header">
-          <div class="header-logo-container">
-            <a class="logo" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" fill="none">
-                <path
-                  d="M12.3069 8.12152L9.35468 1.35916L8.71097 0.912911L7.95628 0.672624L6.93522 0.39801L5.73659 0.912911L4.9375 1.35916L7.95628 8.12152H12.3069Z"
-                  fill="url(#paint0_linear_74_754)" />
-                <path
-                  d="M1.71169 5.86039L4.66387 12.6386L5.30758 13.0859L6.06228 13.3267L7.08333 13.602L8.28197 13.0859L9.08105 12.6386L6.06228 5.86039L1.71169 5.86039Z"
-                  fill="url(#paint1_linear_74_754)" />
-                <path
-                  d="M4.77909 1.4476L0.195951 8.07234L4.77909 8.12145L8.09213 1.4476C8.32475 0.764855 9.05256 1.16312 9.38739 1.4476C7.95644 -1.17414 5.71896 0.355207 4.77909 1.4476Z"
-                  fill="white" />
-                <path
-                  d="M9.22091 12.5524L13.804 5.92766L9.22091 5.87855L5.90787 12.5524C5.67525 13.2351 4.94744 12.8369 4.61261 12.5524C6.04356 15.1741 8.28104 13.6448 9.22091 12.5524Z"
-                  fill="white" />
-                <defs>
-                  <linearGradient id="paint0_linear_74_754" x1="11.5434" y1="8.12152" x2="8.04222" y2="1.57156"
-                    gradientUnits="userSpaceOnUse">
-                    <stop />
-                    <stop offset="0.494792" stop-color="white" />
-                    <stop offset="1" stop-color="white" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_74_754" x1="2.47518" y1="5.86039" x2="5.98909" y2="12.4189"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0C0C0C" />
-                    <stop offset="0.494792" stop-color="white" />
-                    <stop offset="1" stop-color="white" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </a>
-            <p class="header-logo-paragraph">thewatchspot</p>
-          </div>
-          <button class="header-hamburger-button js-open-menu" type="button">
-            <svg class="header-hamburger-button-svg" width="24" height="24">
-              <use href="./images/icons.svg#icon-hamburger_menu"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="header-mobile-meniu is-open js-menu-container">
-          <div class="header-mobile-meniu-logo-and-close-button">
-            <div class="header-meniu-logo-container">
-              <a class="logo" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                  viewBox="0 0 14 14" fill="none">
+  <!-- Body -->
+  <body>
+    <div class="body-container">
+      <!-- Header and Hero section -->
+      <div class="first-page-container">
+        <!-- Header -->
+        <header class="header">
+          <div class="mobile-header">
+            <div class="header-logo-container">
+              <a class="logo" href="./index.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 14 14"
+                  fill="none">
                   <path
                     d="M12.3069 8.12152L9.35468 1.35916L8.71097 0.912911L7.95628 0.672624L6.93522 0.39801L5.73659 0.912911L4.9375 1.35916L7.95628 8.12152H12.3069Z"
                     fill="url(#paint0_linear_74_754)" />
@@ -92,13 +57,23 @@
                     d="M9.22091 12.5524L13.804 5.92766L9.22091 5.87855L5.90787 12.5524C5.67525 13.2351 4.94744 12.8369 4.61261 12.5524C6.04356 15.1741 8.28104 13.6448 9.22091 12.5524Z"
                     fill="white" />
                   <defs>
-                    <linearGradient id="paint0_linear_74_754" x1="11.5434" y1="8.12152" x2="8.04222" y2="1.57156"
+                    <linearGradient
+                      id="paint0_linear_74_754"
+                      x1="11.5434"
+                      y1="8.12152"
+                      x2="8.04222"
+                      y2="1.57156"
                       gradientUnits="userSpaceOnUse">
                       <stop />
                       <stop offset="0.494792" stop-color="white" />
                       <stop offset="1" stop-color="white" />
                     </linearGradient>
-                    <linearGradient id="paint1_linear_74_754" x1="2.47518" y1="5.86039" x2="5.98909" y2="12.4189"
+                    <linearGradient
+                      id="paint1_linear_74_754"
+                      x1="2.47518"
+                      y1="5.86039"
+                      x2="5.98909"
+                      y2="12.4189"
                       gradientUnits="userSpaceOnUse">
                       <stop stop-color="#0C0C0C" />
                       <stop offset="0.494792" stop-color="white" />
@@ -109,169 +84,950 @@
               </a>
               <p class="header-logo-paragraph">thewatchspot</p>
             </div>
-            <button class="header-hamburger-button js-close-menu">
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-close"></use>
+            <button class="header-hamburger-button js-open-menu" type="button">
+              <svg class="header-hamburger-button-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-hamburger_menu"></use>
               </svg>
             </button>
           </div>
-          <nav class="header-nav">
-            <ul class="header-nav-list">
-              <li class="header-nav-list-item">
-                <a class="header-nav-list-item-link" href="./index.html#about-us">About us</a>
-              </li>
-              <li class="header-nav-list-item">
-                <a class="header-nav-list-item-link" href="./index.html#catalog">Catalog</a>
-              </li>
-              <li class="header-nav-list-item">
-                <a class="header-nav-list-item-link" href="./index.html#sale">Sale</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header-phone">
-          <a class="header-phone-number" href="tel:+380684439426">
-            +380 68 443-94-26</a>
-        </div>
-      </header>
-      <section class="hero">
-        <div class="hero-container">
-          <div class="hero-header-container">
-            <h1 class="hero-header">
-              Welcome to our collection of premium watches
-            </h1>
-            <p class="hero-description hero-paragraph">
-              Our watches are not just timepieces, but also an expression of
-              your personality and lifestyle. From classic designs to modern
-              ones, we have a watch to suit every taste and occasion.
-            </p>
+          <div class="header-mobile-meniu is-open js-menu-container">
+            <div class="header-mobile-meniu-logo-and-close-button">
+              <div class="header-meniu-logo-container">
+                <a class="logo" href="./index.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none">
+                    <path
+                      d="M12.3069 8.12152L9.35468 1.35916L8.71097 0.912911L7.95628 0.672624L6.93522 0.39801L5.73659 0.912911L4.9375 1.35916L7.95628 8.12152H12.3069Z"
+                      fill="url(#paint0_linear_74_754)" />
+                    <path
+                      d="M1.71169 5.86039L4.66387 12.6386L5.30758 13.0859L6.06228 13.3267L7.08333 13.602L8.28197 13.0859L9.08105 12.6386L6.06228 5.86039L1.71169 5.86039Z"
+                      fill="url(#paint1_linear_74_754)" />
+                    <path
+                      d="M4.77909 1.4476L0.195951 8.07234L4.77909 8.12145L8.09213 1.4476C8.32475 0.764855 9.05256 1.16312 9.38739 1.4476C7.95644 -1.17414 5.71896 0.355207 4.77909 1.4476Z"
+                      fill="white" />
+                    <path
+                      d="M9.22091 12.5524L13.804 5.92766L9.22091 5.87855L5.90787 12.5524C5.67525 13.2351 4.94744 12.8369 4.61261 12.5524C6.04356 15.1741 8.28104 13.6448 9.22091 12.5524Z"
+                      fill="white" />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_74_754"
+                        x1="11.5434"
+                        y1="8.12152"
+                        x2="8.04222"
+                        y2="1.57156"
+                        gradientUnits="userSpaceOnUse">
+                        <stop />
+                        <stop offset="0.494792" stop-color="white" />
+                        <stop offset="1" stop-color="white" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_74_754"
+                        x1="2.47518"
+                        y1="5.86039"
+                        x2="5.98909"
+                        y2="12.4189"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0C0C0C" />
+                        <stop offset="0.494792" stop-color="white" />
+                        <stop offset="1" stop-color="white" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  <!-- <svg width="14" height="14">
+                  <use href="./images/icons.svg#icon-big-logo"></use>
+                </svg> -->
+                </a>
+                <p class="header-logo-paragraph">thewatchspot</p>
+              </div>
+              <button class="header-hamburger-button js-close-menu">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-list-item">
+                  <a
+                    class="header-nav-list-item-link"
+                    href="./index.html#about-us"
+                    >About us</a
+                  >
+                </li>
+                <li class="header-nav-list-item">
+                  <a
+                    class="header-nav-list-item-link"
+                    href="./index.html#catalog"
+                    >Catalog</a
+                  >
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-item-link" href="./index.html#sale"
+                    >Sale</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="hero-all-images-container">
-            <div class="hero-description-and-carousel-container">
-              <p class="hero-description hero-description-paragraph">
+          <address class="header-phone">
+            <a class="header-phone-number" href="tel:+380684439426">
+              +380 68 443-94-26</a
+            >
+          </address>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+          <div class="hero-container">
+            <div class="hero-header-container">
+              <h1 class="hero-header">
+                Welcome to our collection of premium watches
+              </h1>
+              <p class="hero-description hero-paragraph">
                 Our watches are not just timepieces, but also an expression of
                 your personality and lifestyle. From classic designs to modern
                 ones, we have a watch to suit every taste and occasion.
               </p>
-              <div class="hero-carousel-image-cards">
-                <div class="hero-carousel-image-card" data-carousel-item>
-                  <div class="hero-carousel-images-container">
-                    <img class="hero-carousel-image" alt="wrist-watch" srcset="
-                              ./images/hero-carousel/carousel1.png    1x,
-                              ./images/hero-carousel/carousel1-2x.png 2x
-                            " src="./images/hero-carousel/carousel1.png" />
+            </div>
+            <div class="hero-all-images-container">
+              <div class="hero-description-and-carousel-container">
+                <p class="hero-description hero-description-paragraph">
+                  Our watches are not just timepieces, but also an expression of
+                  your personality and lifestyle. From classic designs to modern
+                  ones, we have a watch to suit every taste and occasion.
+                </p>
+                <div class="hero-carousel-and-buttons-container">
+                  <div class="hero-carousel-image-cards">
+                    <div class="hero-carousel-image-card" data-carousel-item>
+                      <img
+                        class="hero-carousel-image"
+                        alt="wrist-watch 1"
+                        srcset="
+                          ./images/hero-carousel/carousel1.png    1x,
+                          ./images/hero-carousel/carousel1-2x.png 2x
+                        "
+                        src="./images/hero-carousel/carousel1.png" />
+                    </div>
+                    <div class="hero-carousel-image-card" data-carousel-item>
+                      <img
+                        class="hero-carousel-image"
+                        alt="wrist-watch 2"
+                        srcset="
+                          ./images/hero-carousel/carousel2.png    1x,
+                          ./images/hero-carousel/carousel2-2x.png 2x
+                        "
+                        src="./images/hero-carousel/carousel2.png" />
+                    </div>
+                    <div class="hero-carousel-image-card" data-carousel-item>
+                      <img
+                        class="hero-carousel-image"
+                        alt="wrist-watch 3"
+                        srcset="
+                          ./images/hero-carousel/carousel3.png    1x,
+                          ./images/hero-carousel/carousel3-2x.png 2x
+                        "
+                        src="./images/hero-carousel/carousel3.png" />
+                    </div>
+                    <div class="hero-carousel-image-card" data-carousel-item>
+                      <img
+                        class="hero-carousel-image"
+                        alt="wrist-watch 4"
+                        srcset="
+                          ./images/hero-carousel/carousel4.png    1x,
+                          ./images/hero-carousel/carousel4-2x.png 2x
+                        "
+                        src="./images/hero-carousel/carousel4.png" />
+                    </div>
+                    <div class="hero-carousel-image-card" data-carousel-item>
+                      <img
+                        class="hero-carousel-image"
+                        alt="wrist-watch 5"
+                        srcset="
+                          ./images/hero-carousel/carousel5.png    1x,
+                          ./images/hero-carousel/carousel5-2x.png 2x
+                        "
+                        src="./images/hero-carousel/carousel5.png" />
+                    </div>
                   </div>
-                </div>
-                <div class="hero-carousel-image-card">
-                  <div class="hero-carousel-images-container">
-                    <img class="hero-carousel-image" alt="wrist-watch" data-carousel-item srcset="
-                              ./images/hero-carousel/carousel2.png    1x,
-                              ./images/hero-carousel/carousel2-2x.png 2x
-                            " src="./images/hero-carousel/carousel2.png" />
-                  </div>
-                </div>
-                <div class="hero-carousel-image-card">
-                  <div class="hero-carousel-images-container">
-                    <img class="hero-carousel-image" alt="wrist-watch" data-carousel-item srcset="
-                              ./images/hero-carousel/carousel3.png    1x,
-                              ./images/hero-carousel/carousel3-2x.png 2x
-                            " src="./images/hero-carousel/carousel3.png" />
-                  </div>
-                </div>
-                <div class="hero-carousel-image-card">
-                  <div class="hero-carousel-images-container">
-                    <img class="hero-carousel-image" alt="wrist-watch" data-carousel-item srcset="
-                              ./images/hero-carousel/carousel4.png    1x,
-                              ./images/hero-carousel/carousel4-2x.png 2x
-                            " src="./images/hero-carousel/carousel4.png" />
-                  </div>
-                </div>
-                <div class="hero-carousel-image-card">
-                  <div class="hero-carousel-images-container">
-                    <img class="hero-carousel-image" alt="wrist-watch" data-carousel-item srcset="
-                              ./images/hero-carousel/carousel5.png    1x,
-                              ./images/hero-carousel/carousel5-2x.png 2x
-                            " src="./images/hero-carousel/carousel5.png" />
-                  </div>
-                </div>
-                <div class="carousel-image-card-presentation">
-                  <div class="hero-carousel-image-card-buttons">
-                    <button class="hero-carousel-image-card-button" type="button" onclick="onBack()">
-                      <svg class="hero-carousel-image-card-button-svg">
-                        <use href="./images/icons.svg#icon-chevron-left"></use>
+                  <div class="carousel-image-card-presentation">
+                    <div class="hero-carousel-image-card-buttons">
+                      <button
+                        class="hero-carousel-image-card-button"
+                        type="button"
+                        onclick="onBack()">
+                        <svg class="hero-carousel-image-card-button-svg">
+                          <use
+                            href="./images/icons.svg#icon-chevron-left"></use>
+                        </svg>
+                      </button>
+                      <button
+                        class="hero-carousel-image-card-button"
+                        type="button"
+                        onclick="onNext()">
+                        <svg class="hero-carousel-image-card-button-svg">
+                          <use
+                            href="./images/icons.svg#icon-chevron-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="hero-carousel-image-card-buttons-numbers">
+                      <span>01</span>
+                      <svg>
+                        <use href="./images/icons.svg#icon-line"></use>
                       </svg>
-                    </button>
-                    <button class="hero-carousel-image-card-button" type="button" onclick="onNext()">
-                      <svg class="hero-carousel-image-card-button-svg">
-                        <use href="./images/icons.svg#icon-chevron-right"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="hero-carousel-image-card-buttons-numbers">
-                    <span>01</span>
-                    <!-- <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="2"
-                        viewBox="0 0 32 2"
-                        fill="none"
-                      >
-                        <path d="M0 1H32" />
-                      </svg> -->
-                    <svg>
-                      <use href="./images/icons.svg#icon-line"></use>
-                    </svg>
-                    <span>05</span>
+                      <span>05</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <img class="hero-main-image" alt="left hand with wrist-watch" srcset="
+              <img
+                class="hero-main-image"
+                alt="left hand with wrist-watch"
+                srcset="
                   ../images/hero/hero-main-img.jpeg  1x,
                   ./images/hero/hero-main-img2x.jpeg 2x
-                " src="./images/hero/hero-main-img.jpeg" />
-          </div>
-        </div>
-      </section>
-    </div>
-    <main>
-      <section id="about-us" class="about-us">
-        <div class="about-us-container">
-          <div class="about-us-description-container">
-            <h2 class="about-us-header">
-              About us
-            </h2>
-            <div class="about-us-paragraph-container">
-              <p class="about-us-paragraph">
-                Welcome to our premium watch collection, where luxury and style meet functionality and precision. Our
-                selection of
-                timepieces embodies the very best in Swiss craftsmanship and engineering, ensuring that you'll always
-                have
-                a reliable
-                and stylish accessory on your wrist.
-              </p>
-              <p class="about-us-paragraph">
-                At our premium watch collection, we believe that a watch is more than just a timekeeping device – it's a
-                statement piece
-                that reflects your personality and style. So why settle for anything less than the best? Browse our
-                collection today and
-                discover the perfect watch for you.
-              </p>
+                "
+                src="./images/hero/hero-main-img.jpeg" />
             </div>
           </div>
-          <img class="about-us-gif" src="./images/about/ddf3148451bd2db71f02b9d2f8ebb2da.gif" alt="watch-gif">
+        </section>
+      </div>
+
+      <!-- Main -->
+      <main>
+        <!-- About -->
+        <section id="about-us" class="about-us">
+          <div class="about-us-container">
+            <div class="about-us-description-container">
+              <h2 class="about-us-header">About us</h2>
+              <div class="about-us-paragraph-container">
+                <p class="about-us-paragraph">
+                  Welcome to our premium watch collection, where luxury and
+                  style meet functionality and precision. Our selection of
+                  timepieces embodies the very best in Swiss craftsmanship and
+                  engineering, ensuring that you'll always have a reliable and
+                  stylish accessory on your wrist.
+                </p>
+                <p class="about-us-paragraph">
+                  At our premium watch collection, we believe that a watch is
+                  more than just a timekeeping device – it's a statement piece
+                  that reflects your personality and style. So why settle for
+                  anything less than the best? Browse our collection today and
+                  discover the perfect watch for you.
+                </p>
+              </div>
+            </div>
+            <img
+              class="about-us-gif"
+              src="./images/about/ddf3148451bd2db71f02b9d2f8ebb2da.gif"
+              alt="watch-gif" />
+          </div>
+        </section>
+
+        <!-- Catalog -->
+        <section id="catalog" class="catalog">
+          <div class="catalog-container">
+            <h2 class="catalog-header">Catalog</h2>
+            <ul class="catalog-cards-list">
+              <li class="catalog-cards-list-item">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog1.png    1x,
+                        images/catalog/catalog1-2x.png 2x
+                      "
+                      src="images/catalog/catalog1.png"
+                      alt="catalog watch 1" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Tube Watch S42 Date Steel With Black Case
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">€395</p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog2.png    1x,
+                        images/catalog/catalog2-2x.png 2x
+                      "
+                      src="images/catalog/catalog2.png"
+                      alt="catalog watch 2" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Avondale Watch Police For Men
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">€800</p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog3.png    1x,
+                        images/catalog/catalog3-2x.png 2x
+                      "
+                      src="images/catalog/catalog3.png"
+                      alt="catalog watch 3" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Diver 300M Co‑Axial Master Chronometer Chronograph
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">€600</p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog4.png    1x,
+                        images/catalog/catalog4-2x.png 2x
+                      "
+                      src="images/catalog/catalog4.png"
+                      alt="catalog watch 4" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Diver 300M Co-Axial Master Chronometer
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">€1400</p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-heart"></use>
+                    </svg>
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog5.png    1x,
+                        images/catalog/catalog5-2x.png 2x
+                      "
+                      src="images/catalog/catalog5.png"
+                      alt="catalog watch 5" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Taman Watch By Police For Men
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">€500</p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-heart"></use>
+                    </svg>
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog6.png    1x,
+                        images/catalog/catalog6-2x.png 2x
+                      "
+                      src="images/catalog/catalog6.png"
+                      alt="catalog watch 6" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Malawi Watch Police For Men
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">€555</p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog7.png    1x,
+                        images/catalog/catalog7-2x.png 2x
+                      "
+                      src="images/catalog/catalog7.png"
+                      alt="catalog watch 7" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Diver 300M Co-Axial Master Chronometer
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">€1200</p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog8.png    1x,
+                        images/catalog/catalog8-2x.png 2x
+                      "
+                      src="images/catalog/catalog8.png"
+                      alt="catalog watch 8" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Greenlane Watch By Police For Men
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">
+                    Greenlane Watch By Police For Men
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <button class="button" type="button" data-modal-open>
+              Buy now
+            </button>
+          </div>
+        </section>
+
+        <!-- My Watches -->
+        <section class="my-watches">
+          <div class="watches-container">
+            <div class="watches-title">
+              <p class="watches-subtitle">New watches</p>
+              <h2 class="watches-header">
+                Green And Bronze—The Match Made In Heaven
+              </h2>
+            </div>
+            <div class="watches-images">
+              <div class="watches-image-container">
+                <img
+                  srcset="
+                    ./images/watches/waches1.png    1x,
+                    ./images/watches/waches1-2x.png 2x
+                  "
+                  src="./images/watches/waches1.png"
+                  alt="new watches 1"
+                  class="watches-img" />
+              </div>
+              <div class="watches-image-container">
+                <img
+                  srcset="
+                    ./images/watches/watches2.jpg    1x,
+                    ./images/watches/watches2-2x.jpg 2x
+                  "
+                  src="./images/watches/watches2.jpg"
+                  alt="new watches 2"
+                  class="watches-img" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sale -->
+        <section id="sale" class="sale">
+          <div class="sale-container">
+            <h2 class="sale-header">Sale</h2>
+            <div class="sale-content-container">
+              <div class="sale-all-images-container">
+                <div class="sale-little-images-contaniner">
+                  <img
+                    srcset="
+                      ./images/sale/sale1.png    1x,
+                      ./images/sale/sale1-2x.png 2x
+                    "
+                    src="./images/sale/sale1.png"
+                    alt="sale watch 1"
+                    class="sale-images" />
+                  <img
+                    srcset="
+                      ./images/sale/sale2.png    1x,
+                      ./images/sale/sale2-2x.png 2x
+                    "
+                    src="./images/sale/sale2.png"
+                    alt="sale watch 2"
+                    class="sale-images" />
+                  <img
+                    srcset="
+                      ./images/sale/sale3.png    1x,
+                      ./images/sale/sale3-2x.png 2x
+                    "
+                    src="./images/sale/sale3.png"
+                    alt="sale watch 3"
+                    class="sale-images" />
+                  <img
+                    srcset="
+                      ./images/sale/sale4.png    1x,
+                      ./images/sale/sale4-2x.png 2x
+                    "
+                    src="./images/sale/sale4.png"
+                    alt="sale watch 4"
+                    class="sale-images" />
+                </div>
+                <div class="sale-big-image-container">
+                  <img
+                    srcset="./images/sale/sale-large2x.png"
+                    src="./images/sale/sale-large.png"
+                    alt="sale big picture with watch"
+                    class="sale-big-img" />
+                </div>
+              </div>
+              <div class="sale-description-container">
+                <div class="sale-description-name">
+                  <h2 class="sale-product-name">
+                    Greenlane Watch By Police For MenHT
+                  </h2>
+                  <div class="sale-product-name-details">
+                    <p class="sale-product-serial">Product tag: PEWJK2227003</p>
+                    <div class="sale-prices-container">
+                      <span class="sale-new-price">€700</span>
+                      <span class="sale-old-price">€1000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sale-item-description-container">
+                  <div class="sale-item-description-title-container">
+                    <p class="sale-item-description-title">Description</p>
+                    <svg width="16" height="2">
+                      <use href="./images/icons.svg#icon-minus"></use>
+                    </svg>
+                  </div>
+                  <p class="sale-description-paragraph">
+                    Richly detailed with an understated design - the Police
+                    Men’s Greenlane watch features a versatile multifunction
+                    design that fits effortlessly into work and play. The steel
+                    case is adorned with a semi-transparent black dial. The
+                    timepiece exhibits a contrast through a black IP bracelet
+                    with matching crown and pushers.
+                  </p>
+                </div>
+                <div class="sale-item-description-container">
+                  <div class="sale-item-description-title-container">
+                    <p class="sale-item-description-title">
+                      DETAILS & FEATUREStion
+                    </p>
+                    <svg width="16" height="2">
+                      <use href="./images/icons.svg#icon-minus"></use>
+                    </svg>
+                  </div>
+                  <p class="sale-description-paragraph">
+                    Gender: man <br />
+                    Size: 46x54.5mm <br />
+                    Case Colour: Steel <br />
+                    Band Material: Metal <br />
+                    Case Material: Metal <br />
+                    Features: Multifunction <br />
+                    Water Resistant: 5 (ATM) <br />
+                    Band Colour: Steel
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content-container">
+            <div class="footer-address-nav-container">
+              <div class="footer-address-container">
+                <a href="./index.html" class="footer-logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none">
+                    <path
+                      d="M35.1613 23.2054L26.7265 3.88432L24.8873 2.60933L22.731 1.92279L19.8137 1.13818L16.3891 2.60933L14.106 3.88432L22.731 23.2054H35.1613Z"
+                      fill="url(#paint0_linear_74_958)" />
+                    <path
+                      d="M4.89242 16.7429L13.3272 36.1092L15.1664 37.3872L17.3227 38.0754L20.24 38.8618L23.6646 37.3872L25.9478 36.1092L17.3227 16.7429H4.89242Z"
+                      fill="url(#paint1_linear_74_958)" />
+                    <path
+                      d="M13.6545 4.136L0.559859 23.0638L13.6545 23.2041L23.1204 4.136C23.785 2.1853 25.8644 3.32321 26.8211 4.136C22.7327 -3.3547 16.3399 1.01488 13.6545 4.136Z"
+                      fill="white" />
+                    <path
+                      d="M26.3455 35.864L39.4401 16.9362L26.3455 16.7959L16.8796 35.864C16.215 37.8147 14.1356 36.6768 13.1789 35.864C17.2673 43.3547 23.6601 38.9851 26.3455 35.864Z"
+                      fill="white" />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_74_958"
+                        x1="32.9799"
+                        y1="23.2054"
+                        x2="22.9766"
+                        y2="4.49118"
+                        gradientUnits="userSpaceOnUse">
+                        <stop />
+                        <stop offset="0.494792" stop-color="white" />
+                        <stop offset="1" stop-color="white" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_74_958"
+                        x1="7.07383"
+                        y1="16.7429"
+                        x2="17.1136"
+                        y2="35.4814"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0C0C0C" />
+                        <stop offset="0.494792" stop-color="white" />
+                        <stop offset="1" stop-color="white" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+                <!-- <a href="./index.html">
+                  <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-big-logo"></use>
+                  </svg>
+                </a> -->
+                <address class="footer-phone-address">
+                  <a class="footer-phone-number" href="tel:+380684439426">
+                    +380 68 443-94-26</a
+                  >
+                  <p class="footer-address-address">
+                    1678 S. Pioneer Road Salt Lake City <br />
+                    UT 84104
+                  </p>
+                </address>
+              </div>
+              <div class="footer-nav-container">
+                <ul class="footer-nav-list">
+                  <li class="footer-nav-list-item">
+                    <a
+                      class="footer-nav-list-item-link"
+                      href="./index.html#about-us"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="footer-nav-list-item">
+                    <a
+                      class="footer-nav-list-item-link"
+                      href="./index.html#catalog"
+                      >Catalog</a
+                    >
+                  </li>
+                  <li class="footer-nav-list-item">
+                    <a
+                      class="footer-nav-list-item-link"
+                      href="./index.html#sale"
+                      >Sale</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-social-media-container">
+              <div class="social-media-content">
+                <svg>
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </div>
+              <div class="social-media-content">
+                <svg>
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </div>
+              <div class="social-media-content">
+                <svg>
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="footer-final-container">
+            <p class="footer-final-item">
+              @copy;2022 The Watch Spot. All rights reserved.
+            </p>
+            <div class="footer-privacy-and-terms">
+              <p class="footer-final-item">Privacy Policy</p>
+              <p class="footer-final-item">Terms of Service</p>
+            </div>
+          </div>
         </div>
-      </section>
-      <section id="catalog" class="catalog">
+      </footer>
 
-      </section>
-      <section class="my-watches"></section>
-      <section id="sale" class="sale"></section>
-    </main>
-    <footer class="footer"></footer>
-  </div>
-  <script src="./js/index.js"></script>
-  <script src="./js/mobile-menu.js"></script>
-</body>
+      <!-- Modal-form-catalog-section -->
+      <div class="modal is-hidden" data-modal>
+        <button
+          class="catalog-close-form-button"
+          type="button"
+          data-modal-close>
+          <svg class="catalog-form-close-form-button-svg">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="catalog-form-container">
+          <div class="catalog-card-img-container">
+            <div class="catalog-form-img-container">
+              <img
+                class="form-container-img"
+                srcset="
+                  ./images/form/form-img.png   1x,
+                  ./images/form/form-img2x.png 2x
+                "
+                src="./images/form/form-img.png"
+                alt="steel watch" />
+            </div>
+            <div
+              class="catalog-cards-list-item-description-container catalog-form-img-description">
+              <p class="catalog-cards-list-item-description-name">
+                Tube Watch S42 Date Steel With Black Case
+              </p>
+              <p class="catalog-cards-list-item-description-price">€395</p>
+            </div>
+          </div>
+          <div class="catalog-form-and-button-container">
+            <form
+              class="catalog-modal-form"
+              name="signup_form"
+              autocomplete="off">
+              <div class="catalog-modal-form-input-container">
+                <label for="user-name" class="catalog-modal-form-label"
+                  >Full name</label
+                >
+                <input
+                  id="user-name"
+                  class="catalog-modal-form-input"
+                  placeholder="Enter your full name"
+                  name="user-name"
+                  type="text"
+                  required />
+              </div>
 
+              <div class="catalog-modal-form-input-container">
+                <label for="user-email" class="catalog-modal-form-label"
+                  >Email</label
+                >
+                <input
+                  id="user-email"
+                  class="catalog-modal-form-input"
+                  placeholder="Enter your email"
+                  name="user-email"
+                  type="email"
+                  required />
+              </div>
+
+              <div class="catalog-modal-form-input-container">
+                <label for="user-card-number" class="catalog-modal-form-label"
+                  >Card number</label
+                >
+                <input
+                  class="catalog-modal-form-input"
+                  id="user-card-number"
+                  type="tel"
+                  inputmode="numeric"
+                  pattern="[0-9\s]{13,19}"
+                  maxlength="19"
+                  placeholder="Enter card"
+                  required />
+              </div>
+
+              <div class="catalog-modal-form-input-container">
+                <label for="user-comment" class="catalog-modal-form-label"
+                  >Comments</label
+                >
+                <textarea
+                  class="catalog-modal-form-textarea"
+                  id="user-comment"
+                  name="user-comment"
+                  placeholder="Enter your text"></textarea>
+              </div>
+              <button class="catalog-modal-form-button" type="submit">
+                submit
+              </button>
+            </form>
+            <p class="catalog-form-button-description">
+              By clicking on “Submit” button, you agree to our
+              <span class="catalog-form-span">Privacy Policy</span>, and allow
+              Promodo to use this information for marketing purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>

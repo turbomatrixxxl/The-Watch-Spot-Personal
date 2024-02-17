@@ -12,7 +12,7 @@
 }
 
 .header {
-  /* position: relative; */
+  position: relative;
   overflow: hidden;
 
   display: flex;
@@ -33,7 +33,7 @@
   align-items: center;
 }
 
-.logo>svg {
+.logo > svg {
   width: 14px;
   height: 14px;
 }
@@ -72,6 +72,7 @@
 .header-mobile-meniu-logo-and-close-button {
   display: flex;
   justify-content: space-between;
+  stroke: var(--white-color);
 }
 
 .header-nav-list {
@@ -98,10 +99,14 @@
   line-height: 128.571%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  transition: text-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-list-item-link:hover {
-  color: var(--white-transparent-color);
+  text-shadow: 0 0 5px white, 0 0 10px #00ffff, 0 0 15px #7fff00, 0 0 20px white;
+  transform: scale(1.1);
 }
 
 .header-phone {
@@ -114,9 +119,13 @@
   border-radius: 8px;
   background: var(--dark-green-color);
   margin-left: auto;
+
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+.header-phone:hover {
+  transform: scale(1.1);
+}
 
 .header-phone-number {
   color: var(--white-color);
@@ -125,10 +134,14 @@
   font-weight: 400;
   line-height: 133.333%;
   text-transform: uppercase;
+  transition: text-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-phone-number:hover {
-  color: var(--white-transparent-color);
+  text-shadow: 0 0 5px white, 0 0 10px #00ffff, 0 0 15px #7fff00, 0 0 20px white;
+  transform: scale(1.05);
 }
 
 /* Media Querries */
@@ -153,7 +166,7 @@
     align-items: center;
   }
 
-  .logo>svg {
+  .logo > svg {
     width: 19px;
     height: 19px;
   }

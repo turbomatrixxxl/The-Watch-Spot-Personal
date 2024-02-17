@@ -21,36 +21,33 @@
 }
 
 .hero-description-and-carousel-container {
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 40px;
 }
 
-.hero-carousel-image-card {
-  position: relative;
+.hero-carousel-and-buttons-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 11px 44px;
-
-  max-width: 436px;
-  height: 255px;
-
-  background: var(--dark-green-color);
-  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.hero-carousel-images-container {
+.hero-carousel-image-cards {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   overflow: hidden;
-  /* position: absolute; */
-  width: 226px;
-  height: 190px;
+  max-width: 436px;
+  height: 200px;
+  padding: 5px 20px;
+  background: var(--dark-green-color);
 }
 
 .hero-carousel-image {
   width: 226px;
-  height: 190px;
-  transition: transform, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  height: 180px;
 }
 
 .carousel-image-card-presentation {
@@ -105,13 +102,13 @@
   width: 74px;
 }
 
-.hero-carousel-image-card-buttons-numbers>svg {
+.hero-carousel-image-card-buttons-numbers > svg {
   stroke: var(--white-color);
   height: 1px;
 }
 
 .hero-main-image {
-  height: 410px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -133,9 +130,10 @@
     justify-content: space-between;
   }
 
-  .hero-carousel-image-card {
+  .hero-carousel-image-cards {
     width: 436px;
     height: 255px;
+    padding: 11px 44px;
   }
 
   .hero-description {
@@ -193,6 +191,7 @@
     justify-content: space-between;
     gap: 64px;
     align-items: flex-end;
+    width: 100%;
   }
 
   .hero-description-and-carousel-container {
