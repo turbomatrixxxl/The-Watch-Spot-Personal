@@ -45,7 +45,7 @@
 }
 
 .flip-container {
-  perspective: 3000px;
+  perspective: 1000000px;
   cursor: pointer;
 }
 
