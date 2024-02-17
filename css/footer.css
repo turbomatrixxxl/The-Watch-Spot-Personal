@@ -94,7 +94,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.social-media-content > svg {
+.social-media-content > a > svg {
   width: 24px;
   height: 24px;
 }
@@ -186,7 +186,7 @@
     gap: 16px;
   }
 
-  .social-media-content > svg {
+  .social-media-content > a > svg {
     width: 28px;
     height: 28px;
   }
@@ -204,9 +204,7 @@
     line-height: 128.571%;
   }
 
-  .footer-privacy-and-terms{
+  .footer-privacy-and-terms {
     gap: 18px;
   }
 }
-
-
