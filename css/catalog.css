@@ -102,6 +102,10 @@
   flex-shrink: 0;
 }
 
+.catalog-desktop {
+  display: none;
+}
+
 .catalog-cards-list-item-image-details {
   display: flex;
   flex-direction: column;
@@ -431,9 +435,9 @@
     padding: 26px 0 25px;
   }
 
-  /* .catalog-cards-list-item-image {
-        width: 100%;
-    } */
+  .catalog-desktop {
+    display: initial;
+  }
 
   .catalog-cards-list-item-image-details {
     padding: 20px;

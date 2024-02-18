@@ -201,9 +201,9 @@
                   your personality and lifestyle. From classic designs to modern
                   ones, we have a watch to suit every taste and occasion.
                 </p>
-                <div class="hero-carousel-and-buttons-container">
-                  <div class="hero-carousel-image-cards">
-                    <div class="hero-carousel-image-card" data-carousel-item>
+                <div class="card-carousel" id="debug_id_1">
+                  <div class="inner-carousel">
+                    <div>
                       <img
                         class="hero-carousel-image"
                         alt="wrist-watch 1"
@@ -213,7 +213,7 @@
                         "
                         src="./images/hero-carousel/carousel1.png" />
                     </div>
-                    <div class="hero-carousel-image-card" data-carousel-item>
+                    <div>
                       <img
                         class="hero-carousel-image"
                         alt="wrist-watch 2"
@@ -223,7 +223,7 @@
                         "
                         src="./images/hero-carousel/carousel2.png" />
                     </div>
-                    <div class="hero-carousel-image-card" data-carousel-item>
+                    <div>
                       <img
                         class="hero-carousel-image"
                         alt="wrist-watch 3"
@@ -233,7 +233,7 @@
                         "
                         src="./images/hero-carousel/carousel3.png" />
                     </div>
-                    <div class="hero-carousel-image-card" data-carousel-item>
+                    <div>
                       <img
                         class="hero-carousel-image"
                         alt="wrist-watch 4"
@@ -243,7 +243,7 @@
                         "
                         src="./images/hero-carousel/carousel4.png" />
                     </div>
-                    <div class="hero-carousel-image-card" data-carousel-item>
+                    <div>
                       <img
                         class="hero-carousel-image"
                         alt="wrist-watch 5"
@@ -254,33 +254,59 @@
                         src="./images/hero-carousel/carousel5.png" />
                     </div>
                   </div>
+
                   <div class="carousel-image-card-presentation">
-                    <div class="hero-carousel-image-card-buttons">
-                      <button
-                        class="hero-carousel-image-card-button"
-                        type="button"
-                        onclick="onBack()">
-                        <svg class="hero-carousel-image-card-button-svg">
-                          <use
-                            href="./images/icons.svg#icon-chevron-left"></use>
-                        </svg>
-                      </button>
-                      <button
-                        class="hero-carousel-image-card-button"
-                        type="button"
-                        onclick="onNext()">
-                        <svg class="hero-carousel-image-card-button-svg">
-                          <use
-                            href="./images/icons.svg#icon-chevron-right"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="hero-carousel-image-card-buttons-numbers">
-                      <span>01</span>
-                      <svg>
-                        <use href="./images/icons.svg#icon-line"></use>
+                    <button
+                      class="button-spin clockwise left"
+                      type="button"
+                      onclick="onBack()">
+                      <svg class="hero-carousel-image-card-button-svg">
+                        <use href="./images/icons.svg#icon-chevron-left"></use>
                       </svg>
-                      <span>05</span>
+                    </button>
+                    <button
+                      class="button-spin counterclockwise right"
+                      type="button"
+                      onclick="onNext()">
+                      <svg class="hero-carousel-image-card-button-svg">
+                        <use href="./images/icons.svg#icon-chevron-right"></use>
+                      </svg>
+                    </button>
+                    <div class="hero-carousel-image-card-buttons-numbers">
+                      <div class="hero-carousel-numbers-iteration">
+                        <span
+                          class="hero-carousel-numbers-iteration-span"
+                          data-carousel-item
+                          >01</span
+                        >
+                        <span
+                          class="hero-carousel-numbers-iteration-span"
+                          data-carousel-item
+                          >02</span
+                        >
+                        <span
+                          class="hero-carousel-numbers-iteration-span"
+                          data-carousel-item
+                          >03</span
+                        >
+                        <span
+                          class="hero-carousel-numbers-iteration-span"
+                          data-carousel-item
+                          >04</span
+                        >
+                        <span
+                          class="hero-carousel-numbers-iteration-span"
+                          data-carousel-item
+                          >05</span
+                        >
+                      </div>
+                      <div class="hero-carousel-svg-and-span">
+                        <svg
+                          class="hero-carousel-image-card-buttons-numbers-svg">
+                          <use href="./images/icons.svg#icon-line"></use>
+                        </svg>
+                        <span class="hero-carousel-svg-and-span-five">05</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -631,6 +657,175 @@
                         images/catalog/catalog8-2x.png 2x
                       "
                       src="images/catalog/catalog8.png"
+                      alt="catalog watch 8" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Greenlane Watch By Police For Men
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">
+                    Greenlane Watch By Police For Men
+                  </p>
+                </div>
+              </li>
+
+              <li class="catalog-cards-list-item catalog-desktop">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog9.png    1x,
+                        images/catalog/catalog9-2x.png 2x
+                      "
+                      src="images/catalog/catalog9.png"
+                      alt="catalog watch 9" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Greenlane Watch By Police For Men
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">
+                    Greenlane Watch By Police For Men
+                  </p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item catalog-desktop">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog10.png    1x,
+                        images/catalog/catalog10-2x.png 2x
+                      "
+                      src="images/catalog/catalog10.png"
+                      alt="catalog watch 8" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Greenlane Watch By Police For Men
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">
+                    Greenlane Watch By Police For Men
+                  </p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item catalog-desktop">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog11.png    1x,
+                        images/catalog/catalog11-2x.png 2x
+                      "
+                      src="images/catalog/catalog11.png"
+                      alt="catalog watch 8" />
+                  </div>
+                  <div class="catalog-cards-list-item-image-details back">
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      Description
+                    </h3>
+                    <p
+                      class="catalog-image-description-first-child catalog-cards-list-item-image-details-description">
+                      Richly detailed with an understated design - the Police
+                      Men’s Greenlane watch.
+                    </p>
+                    <h3 class="catalog-cards-list-item-image-details-title">
+                      DETAILS & FEATUREStion
+                    </h3>
+                    <p
+                      class="catalog-cards-list-item-image-details-description">
+                      Gender: man Size: 46x54.5mm Case Colour: Steel Band
+                      Material: Metal Case Material: Metal Features:
+                      Multifunction Water Resistant: 5 (ATM) Band Colour: Steel
+                    </p>
+                  </div>
+                </div>
+                <div class="catalog-cards-list-item-description-container">
+                  <p class="catalog-cards-list-item-description-name">
+                    Greenlane Watch By Police For Men
+                  </p>
+                  <p class="catalog-cards-list-item-description-price">
+                    Greenlane Watch By Police For Men
+                  </p>
+                </div>
+              </li>
+              <li class="catalog-cards-list-item catalog-desktop">
+                <div
+                  class="catalog-cards-list-item-image-container flip-container">
+                  <div class="front">
+                    <img
+                      class="catalog-cards-list-item-image"
+                      srcset="
+                        images/catalog/catalog12.png    1x,
+                        images/catalog/catalog12-2x.png 2x
+                      "
+                      src="images/catalog/catalog12.png"
                       alt="catalog watch 8" />
                   </div>
                   <div class="catalog-cards-list-item-image-details back">
