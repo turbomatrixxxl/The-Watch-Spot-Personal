@@ -9,42 +9,42 @@
   --red: red;
 }
 
-/* Global styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+  /* Global styles */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-* {
-  margin: 0;
-}
+  * {
+    margin: 0;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  font-family: "Epilogue", sans-serif;
-}
+  body {
+    font-family: "Epilogue", sans-serif;
+  }
 
-a {
-  text-decoration: none;
-  display: block;
-}
+  a {
+    text-decoration: none;
+    display: block;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-/* setare necesara pentru imagini adaptive */
-img {
-  display: block;
-  /* max-width: 100%;
-  height: fit-content; */
-  object-fit: cover;
-}
+  /* setare necesara pentru imagini adaptive */
+  img {
+    display: block;
+    /* max-width: 100%;
+    height: fit-content; */
+    object-fit: cover;
+  }
 
 /* Classes */
 .button {

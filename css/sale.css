@@ -63,6 +63,7 @@
 }
 
 .sale-big-image-container > img {
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -202,6 +203,10 @@
     font-size: 38px;
     line-height: 105.263%;
   }
+
+  .sale-description-paragraph {
+    max-width: 572px;
+  }
 }
 
 @media screen and (width >=1158px) {
@@ -219,8 +224,19 @@
   .sale-all-images-container {
     width: calc(100% - 595px);
   }
+
   .sale-description-container {
     align-items: flex-start;
     width: calc(100% - (100% - 595px));
+    gap: 0;
+  }
+
+  .sale-first {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .sale-description-paragraph {
+    max-width: 369px;
   }
 }
